@@ -34,13 +34,14 @@ class HeroVideo {
                     $('.video-hero #video-youtube').addClass('active');
                 }, 1000);
             } else if (e.data === 0) {
-                tv.seekTo(vid[0].startSeconds)
+               self.tv.seekTo(vid[0].startSeconds)
             }
         }
 
         window.onPlayerReady = function () {
             self.tv.loadVideoById(vid[0]);
-            //self.tv.mute();
+            // self.tv.mute();
+            // self.tv.setVolume(0);
         }
 
         $(window).on('resize', function(){
@@ -75,7 +76,7 @@ class HeroVideo {
         });
 
         $(".video-hero .cover").hover(function () {
-            $("video-youtube .control-buttons").show();
+            $(".video-hero .control-buttons").show();
           }, function () {
             $(".video-hero .control-buttons").hide();
         });
@@ -83,8 +84,6 @@ class HeroVideo {
 
     vidRescale() {
         var self = this;
-
-        console.log("tv: "+this.tv);
 
         var w = $(window).width()+200,
         h = $(window).height()+200;
