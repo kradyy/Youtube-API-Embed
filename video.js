@@ -13,8 +13,8 @@ class HeroVideo {
 
         this.tv = "";
 
-        var playerDefaults = { autoplay: 0, autohide: 0, modestbranding: 1, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 1, iv_load_policy: 3 };
-
+        var playerDefaults = { autoplay: 0, autohide: 0, playsinline: 1, modestbranding: 1, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 1, iv_load_policy: 3 };
+        
         var vid = [
             { 'videoId': yt_id, 'startSeconds': 0, 'loop': 1, 'suggestedQuality': 'hd720' }
         ];
