@@ -95,3 +95,26 @@
 .control-buttons.center #play-button.active {
 /* images here */
 }
+
+@media screen and (max-width: 767px) {
+  .control-buttons {
+    display: block;
+    bottom: 0 !important;
+  }
+
+  #home-video-banner {
+    height: 270px;
+  }
+
+  .video-hero.size-big {
+      min-height: 270px !important;
+  }
+
+  .video-youtube {
+    left: 0 !important;
+  }
+
+  .video-hero .inner {
+      top: -40px !important;
+  }
+}
